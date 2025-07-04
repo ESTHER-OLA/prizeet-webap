@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -41,7 +40,7 @@ export function HeroSection() {
           >
             <Badge className="mb-6 bg-[#FD9B4D]/10 text-[#FD9B4D] border border-[#FD9B4D] px-3 py-1 text-sm font-medium">
               <TrendingUp className="h-4 w-4 mr-2" />
-              Nigeria's #1 Smartphone Marketplace
+              Nigeria&apos;s #1 Smartphone Marketplace
             </Badge>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-slate-900">
