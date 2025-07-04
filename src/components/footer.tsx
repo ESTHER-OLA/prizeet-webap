@@ -81,7 +81,7 @@ export function Footer() {
           </p>
 
           {subscribed ? (
-            <p className="text-[#FD9B4D] font-medium">You're subscribed! 🎉</p>
+            <p className="text-[#FD9B4D] font-medium">You&apos;re subscribed! 🎉</p>
           ) : (
             <form
               onSubmit={handleSubscribe}

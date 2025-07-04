@@ -67,7 +67,7 @@ export function FAQSection() {
             Frequently Asked <span className="text-[#FD9B4D]">Questions</span>
           </h2>
           <p className="text-lg text-slate-200 mb-8">
-            Can’t find what you're looking for? We’re just a message away.
+            Can’t find what you&apos;re looking for? We’re just a message away.
           </p>
           <Button className="bg-[#FD9B4D] hover:bg-orange-500 text-white font-semibold px-6 py-3 rounded-xl">
             <Headset className="w-5 h-5 mr-2" />

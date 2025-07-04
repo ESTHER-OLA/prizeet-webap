@@ -116,7 +116,7 @@ export function BuyerJourney() {
               </h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-8">
                 Our streamlined process makes smartphone shopping effortless.
-                From search to delivery, we've got you covered every step of the
+                From search to delivery, we&apos;ve got you covered every step of the
                 way.
               </p>
 
