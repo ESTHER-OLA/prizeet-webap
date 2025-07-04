@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Prizeet Web App
 
-## Getting Started
+**Prizeet** is a modern smartphone marketplace web app designed to help users discover the latest smartphones, compare prices, and shop with trusted vendors across Nigeria. The app is responsive, accessible, and performance-optimized.
 
-First, run the development server:
+---
+
+## 🧱 Tech Stack
+
+| Category               | Stack / Tools                                                    |
+| ---------------------- | ---------------------------------------------------------------- |
+| **Framework**          | [Next.js 14](https://nextjs.org/) (App Router, SSR, API Routes)  |
+| **Language**           | TypeScript                                                       |
+| **Styling**            | Tailwind CSS, CSS Modules, Framer Motion                         |
+| **UI Library**         | [shadcn/ui](https://ui.shadcn.com), Lucide Icons                 |
+| **State & Forms**      | React Hooks, useState, useRef, React Hook Form *(if integrated)* |
+| **Testing**            | Jest, React Testing Library, `@testing-library/jest-dom`         |
+| **Image Handling**     | Next/Image                                                       |
+| **Linting/Formatting** | ESLint, Prettier                                                 |
+
+---
+
+## 🧠 Key Decisions Made During the Redesign
+
+* **Componentization**: Broke down the UI into reusable components (`Header`, `HeroSection`, `ProductShowcase`, etc.) to improve scalability and maintainability.
+* **UI/UX Improvement**: Focused on visual hierarchy, white space, accessibility, and mobile responsiveness.
+* **Performance**: Optimized images using `next/image`, lazy-loaded components, and reduced layout shifts using Framer Motion.
+* **Testing**: Introduced unit tests for critical UI components using React Testing Library.
+* **Scalability**: Set up alias imports (`@/components/`, etc.) and adopted clean file architecture for clarity.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Node.js >= 18
+* npm or yarn
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ESTHER-OLA/prizeet-webap
+cd prizeet-frontend
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn
+```
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✅ Running Tests
 
-## Learn More
+### Unit Tests
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run test
+# or
+yarn test
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This will run Jest and test files under the `__tests__` or `*.test.tsx` naming convention using React Testing Library.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Watch Mode
 
-## Deploy on Vercel
+```bash
+npm run test:watch
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Project Structure
+
+```
+/components     → Reusable UI components
+/app            → Next.js app directory structure
+/public         → Static assets
+/tests          → (if any separated test files)
+/__mocks__      → Jest mock files (optional)
+```
+
+---
+
+## 📌 Notes
+
+* Uses **App Router** (`app/`) and **Client Components** where needed (`"use client"`).
+* Environment variables can be added in `.env.local`.
+* SEO, authentication, and backend integration are modular and planned for future releases.
